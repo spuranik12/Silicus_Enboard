@@ -191,7 +191,7 @@ public class BaseTest {
 		testlink = new TestlinkUtils(properties.getProperty("devKey"), properties.getProperty("serverURL"), testlinkProjectName, testlinkPlanName, testlinkBuildName);*/
 	}
 
-	/** COMMENTED, AS NO MORE USE OF TESTLINK, WHICH CAN BE USED In FUTURE IF NEEDED. ELSE SAME METHOD IS USED BELOW WITHOUT TESTLINK. **/
+	/** COMMENTED, AS NO MORE USE OF TESTLINK, WHICH CAN BE USED In FUTURE IF NEEDED. ELSE SAME METHOD IS USED BELOW WITHOUT TESTLINK. ***/
 	
 	/*@AfterMethod
 	public void quitBrowserAndUpdateTestlinkResult(ITestResult result) throws TestLinkAPIException, testlink.api.java.client.TestLinkAPIException{
