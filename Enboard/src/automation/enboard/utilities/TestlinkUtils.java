@@ -1,8 +1,8 @@
 package automation.enboard.utilities;
 
 import br.eti.kinoshita.testlinkjavaapi.util.TestLinkAPIException;
-import testlink.api.java.client.TestLinkAPIClient;
-import testlink.api.java.client.TestLinkAPIResults;
+/*import testlink.api.java.client.TestLinkAPIClient;
+import testlink.api.java.client.TestLinkAPIResults;*/
 
 public class TestlinkUtils {
 
@@ -31,8 +31,8 @@ public class TestlinkUtils {
 		this.testlinkBuildName = testlinkBuildName;
 	}
 
-	public void reportResult(String TestProject, String TestPlan, String Testcase, String Build, String Notes, String Result) throws TestLinkAPIException, testlink.api.java.client.TestLinkAPIException{
+	/*public void reportResult(String TestProject, String TestPlan, String Testcase, String Build, String Notes, String Result) throws TestLinkAPIException, testlink.api.java.client.TestLinkAPIException{
 		TestLinkAPIClient api = new TestLinkAPIClient(devKey, serverURL);
 		api.reportTestCaseResult(TestProject, TestPlan, Testcase, Build, Notes, result != null? result :TestLinkAPIResults.TEST_FAILED);
-	}	
+	}*/	
 }

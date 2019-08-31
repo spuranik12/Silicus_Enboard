@@ -191,8 +191,27 @@ public class BaseTest {
 		testlink = new TestlinkUtils(properties.getProperty("devKey"), properties.getProperty("serverURL"), testlinkProjectName, testlinkPlanName, testlinkBuildName);*/
 	}
 
-	@AfterMethod
+	/** COMMENTED, AS NO MORE USE OF TESTLINK, WHICH CAN BE USED In FUTURE IF NEEDED. ELSE SAME METHOD IS USED BELOW WITHOUT TESTLINK. **/
+	
+	/*@AfterMethod
 	public void quitBrowserAndUpdateTestlinkResult(ITestResult result) throws TestLinkAPIException, testlink.api.java.client.TestLinkAPIException{
+		if (result.getStatus() == ITestResult.FAILURE) {
+			logger.log(LogStatus.FAIL, result.getThrowable());
+
+			child.log(LogStatus.FAIL, "Test Failed");
+			child.log(LogStatus.FAIL, result.getThrowable());
+		} else if (result.getStatus() == ITestResult.SKIP) {
+			child.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
+		} else {
+			child.log(LogStatus.PASS, "Test passed");
+		}
+		quitBrowser();
+		report.endTest(child);
+		//testlink.reportResult(testlinkProjectName, testlinkPlanName, testCaseName, testlinkBuildName, handler.getLogs(), testlink.getResult());
+	}*/
+	
+	@AfterMethod
+	public void quitBrowserAndUpdateTestlinkResult(ITestResult result) throws TestLinkAPIException{
 		if (result.getStatus() == ITestResult.FAILURE) {
 			/*logger.log(LogStatus.FAIL, result.getThrowable());*/
 
